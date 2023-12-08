@@ -59,7 +59,7 @@ rem del /Q "%TEMP%\%~nx0.Y" >NUL 2>&1
 rem exit，退出批处理脚本，/B 退出时不会显示任何消息和提示。"6" 返回的状态码
 rem exit /B "6"
 
-echo "%CATALINA_HOME%"
+echo  "CATALINA_HOME" "%CATALINA_HOME%"
 rem 删除变量中 所有 ";"
 echo "%CATALINA_HOME:;=%"
 
