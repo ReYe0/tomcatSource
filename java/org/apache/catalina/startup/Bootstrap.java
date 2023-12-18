@@ -43,6 +43,14 @@ import org.apache.juli.logging.LogFactory;
  * roundabout approach is to keep the Catalina internal classes (and any
  * other classes they depend on, such as an XML parser) out of the system
  * class path and therefore not visible to application level classes.
+ * 卡特琳娜的引导装载机。
+ * 这个应用程序构造了一个类装入器，
+ * 用于装入 Catalina 内部类(通过积累在“ server”目录下的“ Catalina.home”中找到的所有
+ * JAR 文件) ，并且
+ * 启动容器的常规执行。这种
+ * 迂回方法的目的是将 Catalina 内部类(以及它们所依赖的任何
+ * *其他类，例如 XML 解析器)排除在系统
+ * 类路径之外，因此应用程序级别的类不可见。
  *
  * @author Craig R. McClanahan
  * @author Remy Maucherat
